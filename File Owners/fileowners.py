@@ -13,11 +13,14 @@ class FileOwners:
 
     @staticmethod
     def group_by_owners(files):
-        return None
+		for key in files:
+			print files[key]
+			array1 = 
+			
+			
+		return True
 
-		
-		
-		
+
 		
 files = {
     'Input.txt': 'Randy',
