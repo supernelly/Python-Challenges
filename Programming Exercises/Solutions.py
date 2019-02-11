@@ -1,15 +1,33 @@
-class Palindrome():
+class Question1():
+    def __init__(self):
+        a = []
+        for i in range(2000, 3201):
+            if (i % 7 == 0) and (i % 5 != 0):
+                a.append(str(i))
+        print(','.join(a))
 
-	@staticmethod
-	def is_palindrome(word):
-		letters = [x for x in word.lower()]
-		
-		y = len(letters) - 1
-		for x in letters:
-			if x == letters[y]:
-				y = y - 1
-			else:
-				return False
-		return True
-		
-print(Palindrome.is_palindrome('Deleveled'))
+class Question2():
+    def __init__(self, num):
+        print(self.factorial(num))
+        
+    def factorial(self, num):
+        if num == 0: 
+            return 1
+        else: 
+            return num * self.factorial(num - 1)
+            
+class Question3():
+    def __init__(self):
+        a=1
+# Test
+#Question1()
+#Question2(6) # Positive Integer
+#Question3()
+#Question4()
+#Question5()
+#Question6()
+#Question7()
+#Question8()
+#Question9()
+#Question10()
+#Question11()
